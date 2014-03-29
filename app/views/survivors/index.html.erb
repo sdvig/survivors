@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Picture</th>
       <th></th>
       <th></th>
       <th></th>
@@ -14,6 +15,7 @@
     <% @survivors.each do |survivor| %>
       <tr>
         <td><%= survivor.name %></td>
+        <td><%= survivor.picture %></td>
         <td><%= link_to 'Show', survivor %></td>
         <td><%= link_to 'Edit', edit_survivor_path(survivor) %></td>
         <td><%= link_to 'Destroy', survivor, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -69,6 +69,6 @@ class SurvivorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def survivor_params
-      params.require(:survivor).permit(:name)
+      params.require(:survivor).permit(:name, :picture)
     end
 end
