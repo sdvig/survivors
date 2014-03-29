@@ -16,7 +16,7 @@
       <tr>
         <td><%= survivor.name %></td>
         <td>
-          <%= image_tag(survivor.picture_url) if survivor.picture.present? %>
+          <%= image_tag(survivor.picture_url(:preview)) if survivor.picture.present? %>
         </td>
         <td><%= link_to 'Show', survivor %></td>
         <td><%= link_to 'Edit', edit_survivor_path(survivor) %></td>

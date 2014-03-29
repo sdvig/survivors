@@ -1,14 +1,6 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @survivor.name %>
-</p>
-
-<p>
-  <strong>Picture:</strong>
-  <%= image_tag(@survivor.picture_url) if @survivor.picture.present? %>
-</p>
-
-<%= link_to 'Edit', edit_survivor_path(@survivor) %> |
-<%= link_to 'Back', survivors_path %>
+<div class="full-size-background" style="background-image: url('<%= @survivor.picture_url %>');">
+  <div id="intro" class="intro column">
+    <header class="full-name"><%= @survivor.name %></header>
+  </div>
+</div>

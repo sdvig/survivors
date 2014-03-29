@@ -1,3 +1,31 @@
 // Place all the styles related to the Survivors controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.full-size-background {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.intro {
+  height: 100%;
+}
+
+.column {
+  width: 35%;
+  padding-left: 55%;
+  padding-top: 10em;
+  padding-bottom: 6em;
+  overflow: auto;
+}
+
+.full-name {
+  color: #969696;
+  font-size: 3.75rem;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
