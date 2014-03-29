@@ -7,7 +7,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @survivor.picture %>
+  <%= image_tag(@survivor.picture_url) if @survivor.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_survivor_path(@survivor) %> |
