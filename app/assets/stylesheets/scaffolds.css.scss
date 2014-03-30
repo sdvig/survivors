@@ -10,7 +10,9 @@
 	font-style: normal;
 	src: font-url('OpenSans-CondLight.ttf') format('truetype');
 }
-
+html, body {
+  height: 100%;
+}
 body {
   background-color: #fff;
   /*

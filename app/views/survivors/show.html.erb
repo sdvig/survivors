@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
-<div class="full-size-background" style="background-image: url('<%= @survivor.picture_url %>');">
-  <div id="intro" class="intro column">
-    <header class="full-name"><%= @survivor.name %></header>
-  </div>
+<div class="full-size-background" style="background-image: url('<%= @survivor.picture_url %>');"></div>
+<div id="intro" class="intro column">
+  <header class="full-name"><%= @survivor.name %></header>
+  <p class="excerpt"><%= @survivor.excerpt %></p>
+</div>
+<div id="full-story" class="full-story">
+	<div class="column">
+		<%= @survivor.story %><a href="#intro" class="scroll-to up">наверх</a>
+	</div>
 </div>
