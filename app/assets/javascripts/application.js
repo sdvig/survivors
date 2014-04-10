@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery.scrollTo.js
+//= require jquery.localScroll.js
+//= require jquery.localScroll.js
+
+$(function() {
+
+    $.localScroll();
+});

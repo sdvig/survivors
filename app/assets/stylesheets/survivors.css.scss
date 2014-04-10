@@ -42,3 +42,26 @@
   line-height: 1.35em;
   min-height: 100%;
 }
+
+.scroll-to {
+  display: block;
+  width: 118px;
+  height: 118px;
+  background: image-url('scroll.to.png') no-repeat 0 0;
+  float: right;
+  color: #969696;
+  text-decoration: none;
+  line-height: 0.75em;
+  padding-top: 34px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 5em;
+  font-style: italic;
+  font-family: Georgia;
+}
+
+.up {
+  background-image: image-url('scroll.to.up.png');
+  padding-top: 56px;
+  margin-top: 4em;
+}
