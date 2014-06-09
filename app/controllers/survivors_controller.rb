@@ -15,10 +15,12 @@ class SurvivorsController < ApplicationController
   # GET /survivors/new
   def new
     @survivor = Survivor.new
+    @cities = City.all
   end
 
   # GET /survivors/1/edit
   def edit
+    @cities = City.all
   end
 
   # POST /survivors
@@ -69,6 +71,6 @@ class SurvivorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def survivor_params
-      params.require(:survivor).permit(:name, :picture, :excerpt, :story)
+      params.require(:survivor).permit(:name, :picture, :city_id, :excerpt, :story)
     end
 end
